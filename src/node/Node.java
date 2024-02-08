@@ -2,10 +2,10 @@ package node;
 
 public class Node {
 
-    int data;
-    Node address;
+    public int data;
+    public Node address;
 
-    Node (int data){
+    public Node(int data){
         this.data=data;
         this.address=null;
     }

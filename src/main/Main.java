@@ -1,6 +1,7 @@
 package main;
 
 import list.List;
+import node.Node;
 
 import java.util.Scanner;
 
@@ -14,8 +15,15 @@ public class Main {
         for(int i=0;i<size;i++){
             System.out.println("enter the data for list");
             int data = obj.nextInt();
+            list.makeNodeWithData(data);
 
         }
+
+        System.out.println("enter the data which you want to add at last of the node");
+        int tail = obj.nextInt();
+        Node tailNode=new Node(tail);
+        Node current1=list.insertAtTail(tailNode);
+        list.display();
 
     }
 
