@@ -38,12 +38,23 @@ public class List implements SinglyLinkedList {
 
     @Override
     public int size() {
-        return 0;
+        int count =0;
+        if(head!=null){
+            Node current1=head;
+            while (current1 != null) {
+                count=count+1;
+                current1=current1.address;
+            }
+        }
+
+        return count;
     }
 
     @Override
-    public Node insertAtHead(Node head) {
-        return null;
+    public Node insertAtHead(Node head1) {
+        head1.address=head;
+        head=head1;
+        return head;
     }
 
     @Override
@@ -61,12 +72,23 @@ public class List implements SinglyLinkedList {
     }
 
     @Override
-    public Node deleteAtHead(Node head) {
+    public Node deleteAtHead() {
+        head=head.address;
         return null;
     }
 
     @Override
-    public Node deleteAtTail(Node head) {
-        return null;
+    public Node deleteAtTail() {
+        if(head==null||head.address==null){
+            head=null;
+        }else{
+            Node current1=head;
+            while(current1.address.address!=null){
+                current1=current1.address;
+            }
+            current1.address=null;
+        }
+
+        return head;
     }
 }

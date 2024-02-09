@@ -19,11 +19,27 @@ public class Main {
 
         }
 
-        System.out.println("enter the data which you want to add at last of the node");
-        int tail = obj.nextInt();
-        Node tailNode=new Node(tail);
-        Node current1=list.insertAtTail(tailNode);
+//        System.out.println("enter the data which you want to add at tail of the node");
+//        int tail = obj.nextInt();
+//        Node tailNode=new Node(tail);
+//        Node current1=list.insertAtTail(tailNode);
+
+//        System.out.println("enter the data which you want to add at head of the node");
+//        int head = obj.nextInt();
+//        Node headNode = new Node(head);
+//        Node current2 = list.insertAtHead(headNode);
+
+
+//        list.deleteAtHead();
+//        list.deleteAtTail();
+
+
         list.display();
+//
+        System.out.println();
+        int sizeoflinkedlist=list.size();
+        System.out.println("size of linked list is "+sizeoflinkedlist);
+
 
     }
 

@@ -7,13 +7,13 @@ public interface SinglyLinkedList {
     void display();
     void makeNodeWithData(int data);
     int size();
-    Node insertAtHead(Node head);
+    Node insertAtHead(Node head1);
 
     Node insertAtTail(Node tail);
 
-    Node deleteAtHead(Node head);
+    Node deleteAtHead();
 
-    Node deleteAtTail(Node head);
+    Node deleteAtTail();
 
 
 
